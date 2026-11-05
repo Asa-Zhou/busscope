@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>theme/dark.qss</file>
+        <file>icons/busscope.ico</file>
+        <file>icons/check.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,37 @@
+# 构建产物
+build/
+bin/
+*.o
+*.obj
+
+# Qt / qmake 中间文件
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.qmake.stash
+Makefile
+Makefile.*
+.qmake.stash
+debug/
+release/
+
+# 本地调试记录（按项目约定不进版本库）
+DEBUG.md
+
+# 编辑器
+.vscode/
+.idea/
+*.user
+*.user.*
+
+# 本地测试资产：单片机固件、正点原子实验工程、CAN 卡驱动（不上传）
+实验26 CAN收发实验/
+can_modbus_fw/
+can_test_fw/
+modbus_slave_fw/
+usbcan_driver/
+usbcan_driver.zip
+
+# WorkBuddy 本地会话数据
+.workbuddy/
