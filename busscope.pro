@@ -25,12 +25,19 @@ win32: RC_ICONS = res/icons/busscope.ico
 
 SOURCES += \
     src/main.cpp \
-    src/app/main_window.cpp \
-    src/app/theme.cpp \
-    src/app/wave_chart.cpp \
+    src/app/can_page.cpp \
+    src/app/frame_log_view.cpp \
     src/app/icons.cpp \
+    src/app/main_window.cpp \
+    src/app/poll_page.cpp \
+    src/app/scope_panel.cpp \
+    src/app/slave_page.cpp \
+    src/app/theme.cpp \
+    src/app/widget_helpers.cpp \
+    src/app/wave_chart.cpp \
     src/core/can_frame_model.cpp \
     src/core/frame_log_model.cpp \
+    src/core/point_file.cpp \
     src/core/poll_task.cpp \
     src/core/poll_table_model.cpp \
     src/io/can_link.cpp \
@@ -41,14 +48,21 @@ SOURCES += \
     src/proto/modbus/modbus_rtu.cpp
 
 HEADERS += \
-    src/app/main_window.h \
-    src/app/theme.h \
-    src/app/wave_chart.h \
+    src/app/can_page.h \
+    src/app/frame_log_view.h \
     src/app/icons.h \
+    src/app/main_window.h \
+    src/app/poll_page.h \
+    src/app/scope_panel.h \
+    src/app/slave_page.h \
+    src/app/theme.h \
+    src/app/widget_helpers.h \
+    src/app/wave_chart.h \
     src/core/can_frame.h \
     src/core/can_frame_model.h \
     src/core/frame.h \
     src/core/frame_log_model.h \
+    src/core/point_file.h \
     src/core/poll_task.h \
     src/core/poll_table_model.h \
     src/io/can_link.h \

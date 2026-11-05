@@ -199,8 +199,8 @@ mingw32-make -j4
 ```
 busscope.pro          qmake 工程（唯一构建入口）
 src/main.cpp          程序入口：高 DPI、主题、主窗口、命令行点表
-src/app/              窗口与主题：main_window 负责布局，theme 提供设计令牌 + QSS
-src/core/             与 UI 无关的数据层：Frame / PollTask 结构、两个 QAbstractTableModel
+src/app/              界面层：main_window 只做框架与跨页接线；slave_page / poll_page / can_page 各自持有控件与槽函数；theme 提供设计令牌 + QSS
+src/core/             与 UI 无关的数据层：Frame / PollTask 结构、两个 QAbstractTableModel、点表文件读写（point_file）
 src/io/               设备链路层：ModbusLink（串口收发、切帧、超时）、PollEngine（轮询调度）
 src/proto/modbus/     纯协议实现：CRC16、帧解码、点表映射（可单独单测）
 res/theme/dark.qss    深色主题样式表，颜色与 src/app/theme.h 保持一致
